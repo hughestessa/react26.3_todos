@@ -5,10 +5,9 @@ import TodoList from './TodoList.jsx';
 
 function App() {
 
-
   return (
       <div>
-        <h1>Tessa's To Do List:</h1>
+        <h1>To Do List:</h1>
         <TodoForm />
         <TodoList />
       
