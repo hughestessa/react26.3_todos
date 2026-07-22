@@ -1,11 +1,9 @@
 
-function TodoListItem(todo) {
+function TodoListItem({todo}) {
     
   return (
     <>
-        <ul>
-          {todoList.map(todo => <li>{todo.title}</li>)}
-        </ul>
+        <li>{todo.title}</li>
     </>
   );
 }
