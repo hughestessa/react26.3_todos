@@ -12,7 +12,7 @@ function TodoList({todoList, onCompleteTodo}) {
         <ul>
           {filteredTodoList.map(todo => <TodoListItem key={todo.id} todo={todo} onCompleteTodo={onCompleteTodo}/>)}
         </ul>
-        ) : <p>"Add todo above to get started"</p>
+        ) : <p>Add todo above to get started</p>
         }
     </>
   );
