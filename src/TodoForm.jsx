@@ -13,7 +13,7 @@ function TodoForm({onAddTodo}) {
     */
     //const todoTitle = event.target.todoTitle.value.trim();
 
-    if (todoTitle && todoTitle !== ""){
+    if (workingTodoTitle && workingTodoTitle !== ""){
       onAddTodo(workingTodoTitle);
       setWorkingTodoTitle("");
       //event.target.reset();

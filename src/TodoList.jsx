@@ -1,5 +1,5 @@
 import TodoListItem from './TodoListItem.jsx';
-import {useState} from 'react';
+
  
 
 function TodoList({todoList, onCompleteTodo}) {
@@ -8,12 +8,11 @@ function TodoList({todoList, onCompleteTodo}) {
 
   return (
     <>
-        <p>{filteredTodoList.length === 0 ? "Add todo above to get started":"" }</p>
-        {filteredTodoList.length > 0 ? (
+      {filteredTodoList.length > 0 ? (
         <ul>
           {filteredTodoList.map(todo => <TodoListItem key={todo.id} todo={todo} onCompleteTodo={onCompleteTodo}/>)}
         </ul>
-        ) : null
+        ) : <p>"Add todo above to get started"</p>
         }
     </>
   );
